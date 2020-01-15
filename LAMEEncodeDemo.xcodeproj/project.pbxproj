@@ -1,0 +1,668 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BCC08FAD23CF0F2C003D7D37 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC08FAC23CF0F2C003D7D37 /* AppDelegate.m */; };
+		BCC08FB323CF0F2C003D7D37 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = BCC08FB223CF0F2C003D7D37 /* ViewController.mm */; };
+		BCC08FB623CF0F2C003D7D37 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCC08FB423CF0F2C003D7D37 /* Main.storyboard */; };
+		BCC08FB823CF0F2D003D7D37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCC08FB723CF0F2D003D7D37 /* Assets.xcassets */; };
+		BCC08FBB23CF0F2D003D7D37 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCC08FB923CF0F2D003D7D37 /* LaunchScreen.storyboard */; };
+		BCC08FBE23CF0F2D003D7D37 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC08FBD23CF0F2D003D7D37 /* main.m */; };
+		BCC08FC823CF0F2D003D7D37 /* LAMEEncodeDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC08FC723CF0F2D003D7D37 /* LAMEEncodeDemoTests.m */; };
+		BCC08FD323CF0F2D003D7D37 /* LAMEEncodeDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC08FD223CF0F2D003D7D37 /* LAMEEncodeDemoUITests.m */; };
+		BCC08FE623CF0FBD003D7D37 /* libmp3lame.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BCC08FE523CF0FBD003D7D37 /* libmp3lame.a */; };
+		BCC08FEA23CF0FCF003D7D37 /* vocal.pcm in Resources */ = {isa = PBXBuildFile; fileRef = BCC08FE723CF0FCF003D7D37 /* vocal.pcm */; };
+		BCC08FEB23CF0FCF003D7D37 /* mp3_encoder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BCC08FE823CF0FCF003D7D37 /* mp3_encoder.cpp */; };
+		BCC08FEF23CF0FD7003D7D37 /* lame_build_armv7.sh in Resources */ = {isa = PBXBuildFile; fileRef = BCC08FED23CF0FD7003D7D37 /* lame_build_armv7.sh */; };
+		BCC08FF023CF0FD7003D7D37 /* lame_build_arm64.sh in Resources */ = {isa = PBXBuildFile; fileRef = BCC08FEE23CF0FD7003D7D37 /* lame_build_arm64.sh */; };
+		BCC08FF323CF176D003D7D37 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCC08FF223CF176D003D7D37 /* AVFoundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BCC08FC423CF0F2D003D7D37 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BCC08FA023CF0F2C003D7D37 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BCC08FA723CF0F2C003D7D37;
+			remoteInfo = LAMEEncodeDemo;
+		};
+		BCC08FCF23CF0F2D003D7D37 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BCC08FA023CF0F2C003D7D37 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BCC08FA723CF0F2C003D7D37;
+			remoteInfo = LAMEEncodeDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BCC08FA823CF0F2C003D7D37 /* LAMEEncodeDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LAMEEncodeDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCC08FAB23CF0F2C003D7D37 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BCC08FAC23CF0F2C003D7D37 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BCC08FB123CF0F2C003D7D37 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		BCC08FB223CF0F2C003D7D37 /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
+		BCC08FB523CF0F2C003D7D37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BCC08FB723CF0F2D003D7D37 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BCC08FBA23CF0F2D003D7D37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BCC08FBC23CF0F2D003D7D37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCC08FBD23CF0F2D003D7D37 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BCC08FC323CF0F2D003D7D37 /* LAMEEncodeDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LAMEEncodeDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCC08FC723CF0F2D003D7D37 /* LAMEEncodeDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LAMEEncodeDemoTests.m; sourceTree = "<group>"; };
+		BCC08FC923CF0F2D003D7D37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCC08FCE23CF0F2D003D7D37 /* LAMEEncodeDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LAMEEncodeDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCC08FD223CF0F2D003D7D37 /* LAMEEncodeDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LAMEEncodeDemoUITests.m; sourceTree = "<group>"; };
+		BCC08FD423CF0F2D003D7D37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCC08FE323CF0FBD003D7D37 /* lame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lame.h; sourceTree = "<group>"; };
+		BCC08FE523CF0FBD003D7D37 /* libmp3lame.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmp3lame.a; sourceTree = "<group>"; };
+		BCC08FE723CF0FCF003D7D37 /* vocal.pcm */ = {isa = PBXFileReference; lastKnownFileType = file; path = vocal.pcm; sourceTree = "<group>"; };
+		BCC08FE823CF0FCF003D7D37 /* mp3_encoder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = mp3_encoder.cpp; sourceTree = "<group>"; };
+		BCC08FE923CF0FCF003D7D37 /* mp3_encoder.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = mp3_encoder.hpp; sourceTree = "<group>"; };
+		BCC08FED23CF0FD7003D7D37 /* lame_build_armv7.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = lame_build_armv7.sh; sourceTree = "<group>"; };
+		BCC08FEE23CF0FD7003D7D37 /* lame_build_arm64.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = lame_build_arm64.sh; sourceTree = "<group>"; };
+		BCC08FF223CF176D003D7D37 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BCC08FA523CF0F2C003D7D37 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCC08FF323CF176D003D7D37 /* AVFoundation.framework in Frameworks */,
+				BCC08FE623CF0FBD003D7D37 /* libmp3lame.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCC08FC023CF0F2D003D7D37 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCC08FCB23CF0F2D003D7D37 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BCC08F9F23CF0F2C003D7D37 = {
+			isa = PBXGroup;
+			children = (
+				BCC08FAA23CF0F2C003D7D37 /* LAMEEncodeDemo */,
+				BCC08FC623CF0F2D003D7D37 /* LAMEEncodeDemoTests */,
+				BCC08FD123CF0F2D003D7D37 /* LAMEEncodeDemoUITests */,
+				BCC08FA923CF0F2C003D7D37 /* Products */,
+				BCC08FF123CF176C003D7D37 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BCC08FA923CF0F2C003D7D37 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BCC08FA823CF0F2C003D7D37 /* LAMEEncodeDemo.app */,
+				BCC08FC323CF0F2D003D7D37 /* LAMEEncodeDemoTests.xctest */,
+				BCC08FCE23CF0F2D003D7D37 /* LAMEEncodeDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BCC08FAA23CF0F2C003D7D37 /* LAMEEncodeDemo */ = {
+			isa = PBXGroup;
+			children = (
+				BCC08FEC23CF0FD7003D7D37 /* LAMEScript */,
+				BCC08FE923CF0FCF003D7D37 /* mp3_encoder.hpp */,
+				BCC08FE823CF0FCF003D7D37 /* mp3_encoder.cpp */,
+				BCC08FE723CF0FCF003D7D37 /* vocal.pcm */,
+				BCC08FE023CF0FBD003D7D37 /* lame */,
+				BCC08FAB23CF0F2C003D7D37 /* AppDelegate.h */,
+				BCC08FAC23CF0F2C003D7D37 /* AppDelegate.m */,
+				BCC08FB123CF0F2C003D7D37 /* ViewController.h */,
+				BCC08FB223CF0F2C003D7D37 /* ViewController.mm */,
+				BCC08FB423CF0F2C003D7D37 /* Main.storyboard */,
+				BCC08FB723CF0F2D003D7D37 /* Assets.xcassets */,
+				BCC08FB923CF0F2D003D7D37 /* LaunchScreen.storyboard */,
+				BCC08FBC23CF0F2D003D7D37 /* Info.plist */,
+				BCC08FBD23CF0F2D003D7D37 /* main.m */,
+			);
+			path = LAMEEncodeDemo;
+			sourceTree = "<group>";
+		};
+		BCC08FC623CF0F2D003D7D37 /* LAMEEncodeDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				BCC08FC723CF0F2D003D7D37 /* LAMEEncodeDemoTests.m */,
+				BCC08FC923CF0F2D003D7D37 /* Info.plist */,
+			);
+			path = LAMEEncodeDemoTests;
+			sourceTree = "<group>";
+		};
+		BCC08FD123CF0F2D003D7D37 /* LAMEEncodeDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BCC08FD223CF0F2D003D7D37 /* LAMEEncodeDemoUITests.m */,
+				BCC08FD423CF0F2D003D7D37 /* Info.plist */,
+			);
+			path = LAMEEncodeDemoUITests;
+			sourceTree = "<group>";
+		};
+		BCC08FE023CF0FBD003D7D37 /* lame */ = {
+			isa = PBXGroup;
+			children = (
+				BCC08FE123CF0FBD003D7D37 /* include */,
+				BCC08FE423CF0FBD003D7D37 /* lib */,
+			);
+			path = lame;
+			sourceTree = "<group>";
+		};
+		BCC08FE123CF0FBD003D7D37 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				BCC08FE223CF0FBD003D7D37 /* lame */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		BCC08FE223CF0FBD003D7D37 /* lame */ = {
+			isa = PBXGroup;
+			children = (
+				BCC08FE323CF0FBD003D7D37 /* lame.h */,
+			);
+			path = lame;
+			sourceTree = "<group>";
+		};
+		BCC08FE423CF0FBD003D7D37 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				BCC08FE523CF0FBD003D7D37 /* libmp3lame.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		BCC08FEC23CF0FD7003D7D37 /* LAMEScript */ = {
+			isa = PBXGroup;
+			children = (
+				BCC08FED23CF0FD7003D7D37 /* lame_build_armv7.sh */,
+				BCC08FEE23CF0FD7003D7D37 /* lame_build_arm64.sh */,
+			);
+			path = LAMEScript;
+			sourceTree = "<group>";
+		};
+		BCC08FF123CF176C003D7D37 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BCC08FF223CF176D003D7D37 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BCC08FA723CF0F2C003D7D37 /* LAMEEncodeDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCC08FD723CF0F2D003D7D37 /* Build configuration list for PBXNativeTarget "LAMEEncodeDemo" */;
+			buildPhases = (
+				BCC08FA423CF0F2C003D7D37 /* Sources */,
+				BCC08FA523CF0F2C003D7D37 /* Frameworks */,
+				BCC08FA623CF0F2C003D7D37 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LAMEEncodeDemo;
+			productName = LAMEEncodeDemo;
+			productReference = BCC08FA823CF0F2C003D7D37 /* LAMEEncodeDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BCC08FC223CF0F2D003D7D37 /* LAMEEncodeDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCC08FDA23CF0F2D003D7D37 /* Build configuration list for PBXNativeTarget "LAMEEncodeDemoTests" */;
+			buildPhases = (
+				BCC08FBF23CF0F2D003D7D37 /* Sources */,
+				BCC08FC023CF0F2D003D7D37 /* Frameworks */,
+				BCC08FC123CF0F2D003D7D37 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BCC08FC523CF0F2D003D7D37 /* PBXTargetDependency */,
+			);
+			name = LAMEEncodeDemoTests;
+			productName = LAMEEncodeDemoTests;
+			productReference = BCC08FC323CF0F2D003D7D37 /* LAMEEncodeDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BCC08FCD23CF0F2D003D7D37 /* LAMEEncodeDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCC08FDD23CF0F2D003D7D37 /* Build configuration list for PBXNativeTarget "LAMEEncodeDemoUITests" */;
+			buildPhases = (
+				BCC08FCA23CF0F2D003D7D37 /* Sources */,
+				BCC08FCB23CF0F2D003D7D37 /* Frameworks */,
+				BCC08FCC23CF0F2D003D7D37 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BCC08FD023CF0F2D003D7D37 /* PBXTargetDependency */,
+			);
+			name = LAMEEncodeDemoUITests;
+			productName = LAMEEncodeDemoUITests;
+			productReference = BCC08FCE23CF0F2D003D7D37 /* LAMEEncodeDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BCC08FA023CF0F2C003D7D37 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "芝麻酱";
+				TargetAttributes = {
+					BCC08FA723CF0F2C003D7D37 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					BCC08FC223CF0F2D003D7D37 = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = BCC08FA723CF0F2C003D7D37;
+					};
+					BCC08FCD23CF0F2D003D7D37 = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = BCC08FA723CF0F2C003D7D37;
+					};
+				};
+			};
+			buildConfigurationList = BCC08FA323CF0F2C003D7D37 /* Build configuration list for PBXProject "LAMEEncodeDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BCC08F9F23CF0F2C003D7D37;
+			productRefGroup = BCC08FA923CF0F2C003D7D37 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BCC08FA723CF0F2C003D7D37 /* LAMEEncodeDemo */,
+				BCC08FC223CF0F2D003D7D37 /* LAMEEncodeDemoTests */,
+				BCC08FCD23CF0F2D003D7D37 /* LAMEEncodeDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BCC08FA623CF0F2C003D7D37 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCC08FEA23CF0FCF003D7D37 /* vocal.pcm in Resources */,
+				BCC08FEF23CF0FD7003D7D37 /* lame_build_armv7.sh in Resources */,
+				BCC08FBB23CF0F2D003D7D37 /* LaunchScreen.storyboard in Resources */,
+				BCC08FB823CF0F2D003D7D37 /* Assets.xcassets in Resources */,
+				BCC08FB623CF0F2C003D7D37 /* Main.storyboard in Resources */,
+				BCC08FF023CF0FD7003D7D37 /* lame_build_arm64.sh in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCC08FC123CF0F2D003D7D37 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCC08FCC23CF0F2D003D7D37 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BCC08FA423CF0F2C003D7D37 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCC08FB323CF0F2C003D7D37 /* ViewController.mm in Sources */,
+				BCC08FAD23CF0F2C003D7D37 /* AppDelegate.m in Sources */,
+				BCC08FBE23CF0F2D003D7D37 /* main.m in Sources */,
+				BCC08FEB23CF0FCF003D7D37 /* mp3_encoder.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCC08FBF23CF0F2D003D7D37 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCC08FC823CF0F2D003D7D37 /* LAMEEncodeDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCC08FCA23CF0F2D003D7D37 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCC08FD323CF0F2D003D7D37 /* LAMEEncodeDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BCC08FC523CF0F2D003D7D37 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BCC08FA723CF0F2C003D7D37 /* LAMEEncodeDemo */;
+			targetProxy = BCC08FC423CF0F2D003D7D37 /* PBXContainerItemProxy */;
+		};
+		BCC08FD023CF0F2D003D7D37 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BCC08FA723CF0F2C003D7D37 /* LAMEEncodeDemo */;
+			targetProxy = BCC08FCF23CF0F2D003D7D37 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BCC08FB423CF0F2C003D7D37 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BCC08FB523CF0F2C003D7D37 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BCC08FB923CF0F2D003D7D37 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BCC08FBA23CF0F2D003D7D37 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BCC08FD523CF0F2D003D7D37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BCC08FD623CF0F2D003D7D37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BCC08FD823CF0F2D003D7D37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2MSFKUF8TG;
+				INFOPLIST_FILE = LAMEEncodeDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LAMEEncodeDemo/lame/lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = KK3.github.com.LAMEEncodeDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BCC08FD923CF0F2D003D7D37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2MSFKUF8TG;
+				INFOPLIST_FILE = LAMEEncodeDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LAMEEncodeDemo/lame/lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = KK3.github.com.LAMEEncodeDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BCC08FDB23CF0F2D003D7D37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2MSFKUF8TG;
+				INFOPLIST_FILE = LAMEEncodeDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-KK3.github.com.LAMEEncodeDemoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LAMEEncodeDemo.app/LAMEEncodeDemo";
+			};
+			name = Debug;
+		};
+		BCC08FDC23CF0F2D003D7D37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2MSFKUF8TG;
+				INFOPLIST_FILE = LAMEEncodeDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-KK3.github.com.LAMEEncodeDemoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LAMEEncodeDemo.app/LAMEEncodeDemo";
+			};
+			name = Release;
+		};
+		BCC08FDE23CF0F2D003D7D37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2MSFKUF8TG;
+				INFOPLIST_FILE = LAMEEncodeDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-KK3.github.com.LAMEEncodeDemoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LAMEEncodeDemo;
+			};
+			name = Debug;
+		};
+		BCC08FDF23CF0F2D003D7D37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2MSFKUF8TG;
+				INFOPLIST_FILE = LAMEEncodeDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-KK3.github.com.LAMEEncodeDemoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LAMEEncodeDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BCC08FA323CF0F2C003D7D37 /* Build configuration list for PBXProject "LAMEEncodeDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCC08FD523CF0F2D003D7D37 /* Debug */,
+				BCC08FD623CF0F2D003D7D37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCC08FD723CF0F2D003D7D37 /* Build configuration list for PBXNativeTarget "LAMEEncodeDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCC08FD823CF0F2D003D7D37 /* Debug */,
+				BCC08FD923CF0F2D003D7D37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCC08FDA23CF0F2D003D7D37 /* Build configuration list for PBXNativeTarget "LAMEEncodeDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCC08FDB23CF0F2D003D7D37 /* Debug */,
+				BCC08FDC23CF0F2D003D7D37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCC08FDD23CF0F2D003D7D37 /* Build configuration list for PBXNativeTarget "LAMEEncodeDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCC08FDE23CF0F2D003D7D37 /* Debug */,
+				BCC08FDF23CF0F2D003D7D37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BCC08FA023CF0F2C003D7D37 /* Project object */;
+}
